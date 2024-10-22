@@ -4,7 +4,6 @@
 #define endline "\n"
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 using namespace std;
-const int mod=1e9+7;
 
 int main(){
     fast_cin();
@@ -12,6 +11,11 @@ int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif               
-	cout<<1+2<<endline;
+    int n;cin>>n;
+    while(n--){
+        int a;cin>>a;
+        a--;
+        cout<<1<<" "<<a<<endline;
+    }
     return 0;
 }

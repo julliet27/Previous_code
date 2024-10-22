@@ -4,7 +4,6 @@
 #define endline "\n"
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 using namespace std;
-const int mod=1e9+7;
 
 int main(){
     fast_cin();
@@ -12,6 +11,16 @@ int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif               
-	cout<<1+2<<endline;
+    int t;cin>>t;
+    vector<vector<int>>vec;
+    map<vector<int>,int>mp;
+    while(t--){
+        int a,b,c,d;cin>>a>>b>>c>>d;
+        mp[{a,b,c,d}]=(d-c)*(b-a);
+        vec.push_back({a,b,c,d});
+    }
+     
+
+    
     return 0;
 }
